@@ -20,7 +20,6 @@ export const Header = () => {
                
             </div>
         </div>
-
         <div className="col-span-5 place-self-center mt-20 lg:mt-0 sm: ml-8">
             <div className="relative w-[250px] h-[250px] lg:w-[400px] lg:h-[400px]">
                 <Image className="rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="/LucasB.jpg" alt="Picture of my self" width={300} height={500}/>
