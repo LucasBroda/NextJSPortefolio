@@ -1,10 +1,15 @@
 import React from "react";
+import NavbarLinks from "./NavbarLinks";
 
-const BurgerMenu = () => {
+const BurgerMenu = ( links ) => {
     return (
-        <div>
-            
-        </div>
+        <ul className="flex flex-col py-4 items-center">
+            <li key={index}>
+                {links.map((link, index) => (
+                <NavbarLinks  href={link.href} title={link.title} />
+                ))}
+            </li>
+        </ul>
     )
 }
 
