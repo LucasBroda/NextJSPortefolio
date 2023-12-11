@@ -4,8 +4,9 @@ import { useState } from "react";
 import Link from "next/link";
 import NavbarLinks from "./NavbarLinks";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import BurgerMenu from "./BurgerMenu";
 
-const links = [
+const NavLinks = [
     {
         href: "#about",
         title: "About"
@@ -49,8 +50,7 @@ export const Navbar = () => {
                 </div>
                 <div className="menu hidden md:block md:w-auto" id="navbar">
                     <ul className="text-2xl sm:text-4xl flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
-                       {
-                        links.map((link, index) => (
+                       {NavLinks.map((link, index) => (
                             <li key={index} className="">
                                 <NavbarLinks href={link.href} title={link.title}/>
                             </li>
@@ -59,6 +59,7 @@ export const Navbar = () => {
                     </ul>
                 </div>
             </div>
+            {navbarOpen ? <BurgerMenu links={NavLinks}/> : null}
         </nav>
     )
 };
