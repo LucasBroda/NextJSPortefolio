@@ -1,4 +1,4 @@
-"use client";
+"use client"; // -> using it to avoid an error
 import React from "react";
 import { useState } from "react";
 import Link from "next/link";
