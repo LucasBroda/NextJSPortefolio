@@ -3,6 +3,42 @@ import Image from "next/image";
 import React, {useTransition, useState} from "react";
 import TabButton from "./TabButton";
 
+const displayDatas = [
+    {
+        id: "skills",
+        title: "Skills",
+        content: (
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>HTML/CSS</li>
+                <li>Angular</li>
+                <li>React</li>
+                <li>NextJS</li>
+                <li>NodeJS</li>
+                <li>Laravel</li>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+                <li>Docker</li>
+                <li>Ubuntu</li>
+                <li>GitLab</li>
+            </ul>
+        )
+
+    }, 
+    {
+        id: "experience",
+        title: "Experience",
+        content: (
+            <ul>
+                <li>3 month internship at ProLiveSport</li>
+                <li>4 month internship at IEMN/CRNS(in coming)</li>
+            </ul>
+        )
+    }
+]
+
+
 const AboutMe = () => {
     const[tabs, setTabs] = useState("skills");
     const [isPending, startTransition] = useTransition();
