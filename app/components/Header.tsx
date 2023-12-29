@@ -5,7 +5,7 @@ export const Header = () => {
   return (
     <div className='grid grid-cols-1 sm:grid-cols-12 mt-16' >
         <div className="col-span-7 place-self-center text-center sm:text-left ">
-            <h1 className=' text-white mb-8 text-4xl sm:text-5xl lg:text-6xl font-extrabold'>
+            <h1 className=' mb-8 text-4xl sm:text-5xl lg:text-6xl font-extrabold'>
                 Hello,<br/> I'm Lucas Broda
             </h1>
             <p className='text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6 '>

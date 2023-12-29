@@ -43,7 +43,7 @@ const Projects = () => {
     return (
         <>
         <div id='projects'>
-        <h2 className='text-center text-4xl font-bold text-white mt-28 mb-8'>Projects</h2>
+        <h2 className='text-center text-4xl font-bold  mt-28 mb-8'>Projects</h2>
         <div className='grid md:grid-cols-3 gap-8 md-gap-12'>
             {myProjects.map((project) => 
                 <ProjectsCard key={project.id} title={project.title} description={project.description} imgUrl={project.imgUrl} tag={project}/>
