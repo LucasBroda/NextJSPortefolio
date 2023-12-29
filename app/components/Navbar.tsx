@@ -29,7 +29,7 @@ const NavLinks = [
 export const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
     return (
-        <nav className="fixed top-0 left-0 right-0 z-10 bg-neutral-900 bg-opacity-90">
+        <nav className="fixed top-0 left-0 right-0 z-10 bg-neutral-900 bg-opacity-100">
             <div className="flex flex-wrap items-center justify-between mx-auto p-8">
                 <Link href={"/"} className="text-2xl sm:text-4xl text-white font-semibold">
                     Lucas Broda
