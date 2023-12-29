@@ -8,6 +8,7 @@ const displayDatas = [
         id: "skills",
         title: "Skills",
         content: (
+            <>
             <ul>
                 <li>Python</li>
                 <li>Java</li>
@@ -23,6 +24,10 @@ const displayDatas = [
                 <li>Ubuntu</li>
                 <li>GitLab</li>
             </ul>
+            <ul>
+
+            </ul>
+            </>
         )
 
     }, 
@@ -53,7 +58,7 @@ const AboutMe = () => {
         <section className="text-white mt-28" id="about">
             <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:py-16">
                 <Image src="/IMAGE.jpg" width={500} height={500} alt="Basic Image"></Image>
-                <div>
+                <div className="text-left flex flex-col h-full">
                     <p className="mt-12">
                     My name is Lucas Broda, I'm 20 years old and I'm a third-year computer science student at the IUT in Lens.<br/>
                     I'm a native of the Lille area, where I spent part of my schooling (Marcq En Baroeul to be precise).<br/>
@@ -63,9 +68,12 @@ const AboutMe = () => {
                     I'm also a perfectionist who loves to improve and learn new things, particularly in the field of IT.
                     I like watching videos about new technologies/new frameworks, and I also like doing small projects to improve or train myself!
                     </p>
-                    <div className="flex flex-row mt-8">
+                    <div className="flex flex-row mt-8 justify-start">
                         <TabButton selectTab={() => handleChange("skills")} active={tabs === "skills"}>Skills</TabButton>
                         <TabButton selectTab={() => handleChange("experience")} active={tabs === "experience"}>Experience</TabButton>
+                    </div>
+                    <div className="mt-8">
+                        {displayDatas.find((data) => data.id === tabs)?.content}
                     </div>
                 </div>
             </div>
