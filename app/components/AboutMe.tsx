@@ -59,7 +59,8 @@ const AboutMe = () => {
             <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:py-16">
                 <Image src="/IMAGE.jpg" width={500} height={500} alt="Basic Image"></Image>
                 <div className="text-left flex flex-col h-full">
-                    <p className="mt-12">
+                    <h2 className='text-center text-4xl font-bold text-white mt-8 mb-8'>About me</h2>
+                    <p className="">
                     My name is Lucas Broda, I'm 20 years old and I'm a third-year computer science student at the IUT in Lens.<br/>
                     I'm a native of the Lille area, where I spent part of my schooling (Marcq En Baroeul to be precise).<br/>
                     I did a general baccalaureate (which I passed with an "Assez Bien" distinction), <br/>where, at the time, I chose mathematics, physics-chemistry and computer science as optional subjects,<br/>
