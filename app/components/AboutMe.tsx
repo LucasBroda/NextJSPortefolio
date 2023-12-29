@@ -9,7 +9,7 @@ const displayDatas = [
         title: "Skills",
         content: (
             <>
-            <ul>
+            <ul className="list-disc pl-2">
                 <li>Python</li>
                 <li>Java</li>
                 <li>HTML/CSS</li>
@@ -35,7 +35,7 @@ const displayDatas = [
         id: "experience",
         title: "Experience",
         content: (
-            <ul>
+            <ul className="list-disc pl-2">
                 <li>3 month internship at ProLiveSport</li>
                 <li>4 month internship at IEMN/CRNS(in coming)</li>
             </ul>
