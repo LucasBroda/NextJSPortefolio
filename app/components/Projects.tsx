@@ -8,7 +8,7 @@ const myProjects = [
         title: "Website I made during my internship",
         description: "Little website for an event called Grand Prix de Triathlon, made With Angular",
         gitUrl: "https://github.com/LucasBroda/SiteGrandGP",
-        viewUrl: "/"
+        viewUrl: ""
     },
     {
         id: 2,
@@ -16,7 +16,7 @@ const myProjects = [
         title: "Replica of X",
         description: "Replica of X(still in progress), made with React",
         gitUrl: "https://github.com/LucasBroda/SelfMadeX",
-        viewUrl: "/"
+        viewUrl: ""
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const myProjects = [
         title: "Replica of Discord",
         description: "Replica of Discord(still in progress), made with React/TailwindCSS",
         gitUrl: "https://github.com/LucasBroda/DiscordWithTailwind",
-        viewUrl: "/"
+        viewUrl: ""
     },
     {
         id: 4,
@@ -40,7 +40,7 @@ const myProjects = [
         title: "Current Portefolio",
         description: "The current portefolio you are on, made with NextJS",
         gitUrl: "https://github.com/LucasBroda/NextJSPortefolio",
-        viewUrl: "/"
+        viewUrl: ""
     }
 ]
 
