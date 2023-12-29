@@ -48,7 +48,7 @@ const AboutMe = () => {
     const[tabs, setTabs] = useState("skills");
     const [isPending, startTransition] = useTransition();
 
-    const handleChange = (id) => {
+    const handleChange = (id: React.SetStateAction<string>) => {
         startTransition(() => {
             setTabs(id);
         });
