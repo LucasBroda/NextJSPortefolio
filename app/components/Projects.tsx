@@ -12,7 +12,7 @@ const myProjects = [
     },
     {
         id: 2,
-        imgUrl: "/TWITTER.jpg",
+        imgUrl: "/X.jpg",
         title: "Replica of X",
         description: "Replica of X(still in progress), made with React",
         gitUrl: "https://github.com/LucasBroda/SelfMadeX",
