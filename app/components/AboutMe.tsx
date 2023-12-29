@@ -1,10 +1,11 @@
 "use client"
 import Image from "next/image";
 import React, {useTransition, useState} from "react";
+import TabButton from "./TabButton";
 
 const AboutMe = () => {
     const[tabs, setTabs] = useState("skills");
-    const [startTransition, isPending] = useTransition();
+    const [isPending, startTransition] = useTransition();
 
     const handleChange = (id) => {
         startTransition(() => {
@@ -13,7 +14,7 @@ const AboutMe = () => {
     }
 
     return (
-        <section className="text-white mt-28">
+        <section className="text-white mt-28" id="about">
             <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:py-16">
                 <Image src="/IMAGE.jpg" width={500} height={500} alt="Basic Image"></Image>
                 <div>
@@ -27,8 +28,8 @@ const AboutMe = () => {
                     I like watching videos about new technologies/new frameworks, and I also like doing small projects to improve or train myself!
                     </p>
                     <div className="flex flex-row mt-8">
-                        <span className="mr-3 font-semibold hover:text-white text-[#ADB7BE] border-b border-white">Skills</span>
-                        <span className="mr-3 font-semibold hover:text-white text-[#ADB7BE] border-b border-white">Experience</span>
+                        <TabButton selectTab={() => handleChange("skills")} active={tabs === "skills"}>Skills</TabButton>
+                        <TabButton selectTab={() => handleChange("experience")} active={tabs === "experience"}>Experience</TabButton>
                     </div>
                 </div>
             </div>
