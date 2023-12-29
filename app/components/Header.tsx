@@ -11,6 +11,9 @@ export const Header = () => {
             <p className='text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6 '>
                 I'm a 20-year-old French student in my 3rd year<br/>
                 of Computer Science degree at the IUT in Lens.<br/>
+                Here you will find a couple of informations about me,<br/>
+                such as my skills, my projects, my professional <br/>
+                experiences, and my self of course !
                 
             </p>
         </div>
